@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="RestaurantMenuHeader" customModule="Zeat_diner" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="300"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="VPW-g2-ldV">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="lessThanOrEqual" priority="990" constant="200" id="FlJ-eV-vgc"/>
+                    </constraints>
+                </imageView>
+                <view contentMode="scaleToFill" verticalCompressionResistancePriority="900" translatesAutoresizingMaskIntoConstraints="NO" id="OfW-Mj-He6" userLabel="Restaurant Detail BackGround">
+                    <rect key="frame" x="0.0" y="200" width="375" height="100"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="lessThanOrEqual" constant="100" id="Heg-DA-YvA"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NGI-Do-WzA" userLabel="Restaurant Detail">
+                    <rect key="frame" x="20" y="160" width="335" height="100"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Restaurant Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9jk-ll-2I0">
+                            <rect key="frame" x="8" y="8" width="319" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="sxB-pO-Ewc"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="9jk-ll-2I0" firstAttribute="top" secondItem="NGI-Do-WzA" secondAttribute="top" constant="8" id="2eZ-ct-PT9"/>
+                        <constraint firstAttribute="height" priority="900" constant="100" id="8s8-OF-4zH"/>
+                        <constraint firstItem="9jk-ll-2I0" firstAttribute="leading" secondItem="NGI-Do-WzA" secondAttribute="leading" constant="8" id="TnL-Ie-pb6"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="20" id="X1v-Ij-rc4"/>
+                        <constraint firstAttribute="trailing" secondItem="9jk-ll-2I0" secondAttribute="trailing" constant="8" id="zL6-eM-pbA"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="NGI-Do-WzA" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" priority="850" constant="160" id="0Vm-xS-kRD"/>
+                <constraint firstItem="VPW-g2-ldV" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="ANk-nv-Yzi"/>
+                <constraint firstAttribute="bottom" secondItem="NGI-Do-WzA" secondAttribute="bottom" constant="40" id="Ns1-nX-4EB"/>
+                <constraint firstAttribute="trailing" secondItem="VPW-g2-ldV" secondAttribute="trailing" id="Qie-qu-TWY"/>
+                <constraint firstItem="OfW-Mj-He6" firstAttribute="top" secondItem="VPW-g2-ldV" secondAttribute="bottom" id="TiA-1p-yaf"/>
+                <constraint firstAttribute="bottom" secondItem="OfW-Mj-He6" secondAttribute="bottom" id="UU0-ME-b3z"/>
+                <constraint firstAttribute="trailing" secondItem="NGI-Do-WzA" secondAttribute="trailing" constant="20" id="YMq-eM-481"/>
+                <constraint firstItem="VPW-g2-ldV" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="ecl-as-QR8"/>
+                <constraint firstItem="NGI-Do-WzA" firstAttribute="top" relation="greaterThanOrEqual" secondItem="iN0-l3-epB" secondAttribute="top" constant="20" id="fNv-rl-a2U"/>
+                <constraint firstItem="OfW-Mj-He6" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="mVK-GG-FMo"/>
+                <constraint firstAttribute="trailing" secondItem="OfW-Mj-He6" secondAttribute="trailing" id="oGD-4p-c00"/>
+                <constraint firstItem="NGI-Do-WzA" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="ssT-u8-HFJ"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="restauranNameLabel" destination="9jk-ll-2I0" id="boe-3V-Oac"/>
+                <outlet property="restaurantImageView" destination="VPW-g2-ldV" id="lfM-Yq-4Bs"/>
+            </connections>
+            <point key="canvasLocation" x="49.5" y="81"/>
+        </view>
+    </objects>
+</document>

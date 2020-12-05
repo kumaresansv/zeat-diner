@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13178.6" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13156.2"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="restaurantTableCell" rowHeight="140" id="KGk-i7-Jjw" customClass="RestaurantTableCell" customModule="Zeat_diner" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="220"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="219.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Restaurant Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RHR-sg-eD7">
+                        <rect key="frame" x="8" y="148" width="204" height="22"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="22" id="GFE-cg-SmC"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Address" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nzg-SB-tEa">
+                        <rect key="frame" x="8" y="170" width="304" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="9ao-EE-VXc"/>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" priority="750" constant="204" id="yOl-tp-nom"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="13"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ro9-gv-eQE">
+                        <rect key="frame" x="8" y="8" width="304" height="140"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="140" id="3fx-Di-J9M"/>
+                        </constraints>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LocationInactive" translatesAutoresizingMaskIntoConstraints="NO" id="uAL-6C-h45">
+                        <rect key="frame" x="8" y="195" width="16" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="16" id="R2i-sc-f6u"/>
+                            <constraint firstAttribute="width" constant="16" id="eih-pT-sRN"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="11.23" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NsD-Wl-kS7">
+                        <rect key="frame" x="32" y="195" width="40" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="40" id="m3M-FQ-5zu"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="uAL-6C-h45" firstAttribute="leading" secondItem="nzg-SB-tEa" secondAttribute="leading" id="3P8-0p-rxE"/>
+                    <constraint firstItem="RHR-sg-eD7" firstAttribute="top" secondItem="Ro9-gv-eQE" secondAttribute="bottom" id="AoR-zz-EV5"/>
+                    <constraint firstItem="nzg-SB-tEa" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="Cs1-Kq-gq5"/>
+                    <constraint firstItem="nzg-SB-tEa" firstAttribute="top" secondItem="RHR-sg-eD7" secondAttribute="bottom" id="QCb-oA-mhm"/>
+                    <constraint firstItem="Ro9-gv-eQE" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="Twu-ht-DWC"/>
+                    <constraint firstItem="Ro9-gv-eQE" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="Vur-4A-dbW"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="nzg-SB-tEa" secondAttribute="trailing" id="h1j-cv-CL6"/>
+                    <constraint firstItem="Ro9-gv-eQE" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="hb0-Ax-0zu"/>
+                    <constraint firstItem="RHR-sg-eD7" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="i92-d0-Pau"/>
+                    <constraint firstItem="uAL-6C-h45" firstAttribute="top" secondItem="nzg-SB-tEa" secondAttribute="bottom" constant="4" id="skg-vX-zv3"/>
+                    <constraint firstItem="NsD-Wl-kS7" firstAttribute="leading" secondItem="uAL-6C-h45" secondAttribute="trailing" constant="8" id="uiS-iM-EGc"/>
+                    <constraint firstItem="NsD-Wl-kS7" firstAttribute="top" secondItem="uAL-6C-h45" secondAttribute="top" id="xpi-SO-3GA"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="RHR-sg-eD7" secondAttribute="trailing" constant="100" id="ytJ-CZ-H97"/>
+                </constraints>
+                <userDefinedRuntimeAttributes>
+                    <userDefinedRuntimeAttribute type="color" keyPath="layer.borderColor">
+                        <color key="value" red="0.0" green="0.77541775173611116" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </userDefinedRuntimeAttribute>
+                </userDefinedRuntimeAttributes>
+            </tableViewCellContentView>
+            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="address" destination="nzg-SB-tEa" id="JYe-YV-bXW"/>
+                <outlet property="distance" destination="NsD-Wl-kS7" id="ty8-l2-QTb"/>
+                <outlet property="restaurantImage" destination="Ro9-gv-eQE" id="Nrr-PG-yDT"/>
+                <outlet property="restaurantName" destination="RHR-sg-eD7" id="x13-RW-nbf"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="LocationInactive" width="16" height="16"/>
+    </resources>
+</document>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="OrderItemTableViewCell" customModule="Zeat_diner" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="99.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="PUE-yi-7Dy">
+                        <rect key="frame" x="8" y="8" width="25" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="25" id="4lj-DY-7op"/>
+                            <constraint firstAttribute="width" secondItem="PUE-yi-7Dy" secondAttribute="height" multiplier="1:1" id="Wbq-8K-M0q"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Item Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="le2-QW-Xfd">
+                        <rect key="frame" x="41" y="8" width="203" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="25" id="9sh-LK-hLt"/>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="25" id="ADB-pN-GFq"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$19.95" textAlignment="justified" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YRe-MX-AqL">
+                        <rect key="frame" x="252" y="8" width="60" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="60" id="3vD-Ay-36G"/>
+                            <constraint firstAttribute="height" constant="25" id="Mx3-MR-Te0"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Item Option" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vi9-tZ-z24">
+                        <rect key="frame" x="41" y="41" width="203" height="40"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KVU-7i-SV8">
+                        <rect key="frame" x="252" y="41" width="60" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="60" id="32x-Dv-dlB"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="13"/>
+                        <color key="textColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="PUE-yi-7Dy" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="0kl-2S-wF0"/>
+                    <constraint firstItem="le2-QW-Xfd" firstAttribute="leading" secondItem="PUE-yi-7Dy" secondAttribute="trailing" constant="8" id="8Gq-dR-eyL"/>
+                    <constraint firstAttribute="trailing" secondItem="KVU-7i-SV8" secondAttribute="trailing" constant="8" id="8VJ-q2-4kO"/>
+                    <constraint firstItem="YRe-MX-AqL" firstAttribute="leading" secondItem="le2-QW-Xfd" secondAttribute="trailing" constant="8" id="CzF-XU-LDa"/>
+                    <constraint firstItem="Vi9-tZ-z24" firstAttribute="leading" secondItem="le2-QW-Xfd" secondAttribute="leading" id="Fy0-wY-3F8"/>
+                    <constraint firstItem="KVU-7i-SV8" firstAttribute="leading" secondItem="Vi9-tZ-z24" secondAttribute="trailing" constant="8" id="JM0-cd-3Kg"/>
+                    <constraint firstItem="KVU-7i-SV8" firstAttribute="top" secondItem="YRe-MX-AqL" secondAttribute="bottom" constant="8" id="JTu-m7-3Id"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="Vi9-tZ-z24" secondAttribute="bottom" constant="8" id="TC3-3i-viu"/>
+                    <constraint firstAttribute="trailing" secondItem="YRe-MX-AqL" secondAttribute="trailing" constant="8" id="Zim-eB-Faa"/>
+                    <constraint firstItem="le2-QW-Xfd" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="dlf-mh-jPX"/>
+                    <constraint firstItem="PUE-yi-7Dy" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="gcV-8a-auL"/>
+                    <constraint firstItem="YRe-MX-AqL" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="qVN-Lw-x5X"/>
+                    <constraint firstItem="Vi9-tZ-z24" firstAttribute="top" secondItem="le2-QW-Xfd" secondAttribute="bottom" constant="8" id="rIe-KY-68r"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="itemCountImageView" destination="PUE-yi-7Dy" id="4CL-c1-Lcf"/>
+                <outlet property="itemNameLabel" destination="le2-QW-Xfd" id="LfP-GX-aHs"/>
+                <outlet property="itemOptionLabel" destination="Vi9-tZ-z24" id="zwu-FC-GSY"/>
+                <outlet property="itemPriceLabel" destination="YRe-MX-AqL" id="LII-KF-BNL"/>
+                <outlet property="itemStatusLabel" destination="KVU-7i-SV8" id="Jry-lp-C3O"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

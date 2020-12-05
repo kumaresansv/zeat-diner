@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RestaurantDineInController" customModule="Zeat_diner" customModuleProvider="target">
+            <connections>
+                <outlet property="closeButton" destination="Gne-da-lOS" id="T3P-Zq-rjs"/>
+                <outlet property="contentViewHeight" destination="I7P-tc-MHB" id="6ij-do-Jdm"/>
+                <outlet property="diningSegmentedControl" destination="8sw-hU-Nzp" id="SwG-Gs-K0k"/>
+                <outlet property="diningTableView" destination="lWn-3N-ftb" id="IBV-K0-dc2"/>
+                <outlet property="imageBottomToScrollTopConstraint" destination="yKJ-qD-KTT" id="Ywp-FF-B8T"/>
+                <outlet property="imageHeightConstraint" destination="Gnu-QJ-0mr" id="3rZ-En-b8x"/>
+                <outlet property="navBarTopToSafeAreaTop" destination="dov-Wm-o2F" id="4EN-1k-0be"/>
+                <outlet property="navBarView" destination="CZ5-7c-OXa" id="Iph-0T-21e"/>
+                <outlet property="requestNewTableView" destination="UwC-on-TG2" id="CLC-n0-Odr"/>
+                <outlet property="restaurantImage" destination="07u-PS-rRg" id="ESg-Mp-ArB"/>
+                <outlet property="restaurantImageTopConstraint" destination="taj-ay-TpN" id="6Y3-NT-9Pa"/>
+                <outlet property="restaurantName" destination="g8V-DW-OYO" id="dYP-l8-Kyu"/>
+                <outlet property="restaurantScrollView" destination="djh-OD-NX4" id="Ib1-sd-z3g"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="07u-PS-rRg" userLabel="Restaurant Image">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="200" identifier="imageHeightConstraint" id="Gnu-QJ-0mr"/>
+                    </constraints>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CZ5-7c-OXa">
+                    <rect key="frame" x="0.0" y="-24" width="375" height="88"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="88" id="PFW-fW-v0X"/>
+                    </constraints>
+                </view>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="djh-OD-NX4">
+                    <rect key="frame" x="0.0" y="200" width="375" height="467"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3C0-rP-5dM" userLabel="Content View">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="467"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Restaurant Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g8V-DW-OYO">
+                                    <rect key="frame" x="8" y="8" width="359" height="30"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="30" id="bkV-Zb-dAf"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="8sw-hU-Nzp">
+                                    <rect key="frame" x="8" y="46" width="359" height="31"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="30" id="cNL-eE-izr"/>
+                                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="ulY-Ty-10H"/>
+                                    </constraints>
+                                    <segments>
+                                        <segment title="New Table"/>
+                                        <segment title="Join Table"/>
+                                    </segments>
+                                    <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <connections>
+                                        <action selector="diningIndexChanged:" destination="-1" eventType="valueChanged" id="UZd-NT-77c"/>
+                                    </connections>
+                                </segmentedControl>
+                                <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" delaysContentTouches="NO" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="lWn-3N-ftb">
+                                    <rect key="frame" x="0.0" y="84" width="375" height="383"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <connections>
+                                        <outlet property="dataSource" destination="-1" id="QQ0-xj-N5E"/>
+                                        <outlet property="delegate" destination="-1" id="IvA-58-nck"/>
+                                    </connections>
+                                </tableView>
+                                <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UwC-on-TG2">
+                                    <rect key="frame" x="0.0" y="84" width="375" height="383"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstItem="g8V-DW-OYO" firstAttribute="leading" secondItem="3C0-rP-5dM" secondAttribute="leading" constant="8" id="8Ki-fK-eRx"/>
+                                <constraint firstItem="g8V-DW-OYO" firstAttribute="top" secondItem="3C0-rP-5dM" secondAttribute="top" constant="8" id="Cnu-07-Euo"/>
+                                <constraint firstAttribute="height" constant="1000" identifier="contentViewHeight" id="I7P-tc-MHB"/>
+                                <constraint firstAttribute="trailing" secondItem="g8V-DW-OYO" secondAttribute="trailing" constant="8" id="IDe-H5-Yam"/>
+                                <constraint firstItem="lWn-3N-ftb" firstAttribute="top" secondItem="8sw-hU-Nzp" secondAttribute="bottom" constant="8" id="b33-JQ-qOD"/>
+                                <constraint firstItem="UwC-on-TG2" firstAttribute="top" secondItem="8sw-hU-Nzp" secondAttribute="bottom" constant="8" id="bbD-Hc-KT7"/>
+                                <constraint firstAttribute="trailing" secondItem="8sw-hU-Nzp" secondAttribute="trailing" constant="8" id="bfj-fp-Dma"/>
+                                <constraint firstAttribute="trailing" secondItem="lWn-3N-ftb" secondAttribute="trailing" id="irk-30-8EP"/>
+                                <constraint firstItem="8sw-hU-Nzp" firstAttribute="top" secondItem="g8V-DW-OYO" secondAttribute="bottom" constant="8" id="paq-q9-5qp"/>
+                                <constraint firstItem="8sw-hU-Nzp" firstAttribute="leading" secondItem="3C0-rP-5dM" secondAttribute="leading" constant="8" id="tnu-HR-NdC"/>
+                                <constraint firstItem="lWn-3N-ftb" firstAttribute="leading" secondItem="3C0-rP-5dM" secondAttribute="leading" id="v8N-Zs-MNg"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="3C0-rP-5dM" firstAttribute="leading" secondItem="djh-OD-NX4" secondAttribute="leading" id="1DF-j6-tn8"/>
+                        <constraint firstAttribute="bottom" secondItem="lWn-3N-ftb" secondAttribute="bottom" id="AgN-7c-Bnf"/>
+                        <constraint firstAttribute="trailing" secondItem="3C0-rP-5dM" secondAttribute="trailing" id="Ve6-Yz-4xL"/>
+                        <constraint firstAttribute="trailing" secondItem="UwC-on-TG2" secondAttribute="trailing" id="Ypp-xF-x4I"/>
+                        <constraint firstItem="3C0-rP-5dM" firstAttribute="top" secondItem="djh-OD-NX4" secondAttribute="top" id="bbJ-nI-Rvy"/>
+                        <constraint firstItem="UwC-on-TG2" firstAttribute="leading" secondItem="djh-OD-NX4" secondAttribute="leading" id="kCn-em-KOz"/>
+                        <constraint firstAttribute="bottom" secondItem="3C0-rP-5dM" secondAttribute="bottom" id="uZb-pS-p12"/>
+                        <constraint firstAttribute="bottom" secondItem="UwC-on-TG2" secondAttribute="bottom" id="yNW-U2-QWa"/>
+                    </constraints>
+                </scrollView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gne-da-lOS" userLabel="CloseButton">
+                    <rect key="frame" x="8" y="28" width="30" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="30" id="8sb-1z-orQ"/>
+                        <constraint firstAttribute="width" secondItem="Gne-da-lOS" secondAttribute="height" multiplier="1:1" id="fb2-ld-nwG"/>
+                    </constraints>
+                    <state key="normal" image="CloseBlackInactive"/>
+                    <connections>
+                        <action selector="closeRestaurantDinein:" destination="-1" eventType="touchUpInside" id="6GV-nE-EE8"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="Gne-da-lOS" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="8Xt-gy-Bz4"/>
+                <constraint firstItem="3C0-rP-5dM" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" id="Lmz-z7-ATf"/>
+                <constraint firstAttribute="trailing" secondItem="CZ5-7c-OXa" secondAttribute="trailing" id="Mxb-6d-uy8"/>
+                <constraint firstItem="Gne-da-lOS" firstAttribute="top" secondItem="04p-h3-3ci" secondAttribute="top" constant="8" id="dJM-uZ-Ae3"/>
+                <constraint firstItem="CZ5-7c-OXa" firstAttribute="top" secondItem="04p-h3-3ci" secondAttribute="top" constant="-44" id="dov-Wm-o2F"/>
+                <constraint firstItem="djh-OD-NX4" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="eR6-7h-ck4"/>
+                <constraint firstItem="CZ5-7c-OXa" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="fLt-0B-nly"/>
+                <constraint firstAttribute="bottom" secondItem="djh-OD-NX4" secondAttribute="bottom" id="iaY-GX-MIj"/>
+                <constraint firstItem="07u-PS-rRg" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="kHL-2W-Uep"/>
+                <constraint firstAttribute="trailing" secondItem="djh-OD-NX4" secondAttribute="trailing" id="pZa-Ou-DRW"/>
+                <constraint firstItem="07u-PS-rRg" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" identifier="restaurantImageTopConstraint" id="taj-ay-TpN"/>
+                <constraint firstItem="07u-PS-rRg" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" id="tqY-Of-7HG"/>
+                <constraint firstItem="djh-OD-NX4" firstAttribute="top" secondItem="07u-PS-rRg" secondAttribute="bottom" id="yKJ-qD-KTT"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="04p-h3-3ci"/>
+            <point key="canvasLocation" x="67.5" y="52.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="CloseBlackInactive" width="25" height="25"/>
+    </resources>
+</document>

@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="86" id="KGk-i7-Jjw" customClass="DineinTableViewCell" customModule="Zeat_diner" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="86"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="85"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HCw-dI-wti">
+                        <rect key="frame" x="8" y="8" width="20" height="20"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="20" id="HPH-1u-Lak"/>
+                            <constraint firstAttribute="width" secondItem="HCw-dI-wti" secondAttribute="height" multiplier="1:1" id="HQI-p5-bI6"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dR9-eR-QRE">
+                        <rect key="frame" x="36" y="8" width="195" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="0az-7H-mOe"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" image="Clock" translatesAutoresizingMaskIntoConstraints="NO" id="Fhe-k3-hfP">
+                        <rect key="frame" x="239" y="10" width="15" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="15" id="6K0-vk-x6G"/>
+                            <constraint firstAttribute="width" secondItem="Fhe-k3-hfP" secondAttribute="height" multiplier="1:1" id="bxc-4e-Bmt"/>
+                        </constraints>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="GroupCount" translatesAutoresizingMaskIntoConstraints="NO" id="Inx-YR-gbp">
+                        <rect key="frame" x="239" y="35" width="15" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="Inx-YR-gbp" secondAttribute="height" multiplier="1:1" id="J9N-aB-nZg"/>
+                            <constraint firstAttribute="width" constant="15" id="XCx-h3-Oq9"/>
+                        </constraints>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DiningTable" translatesAutoresizingMaskIntoConstraints="NO" id="F2S-On-pOh">
+                        <rect key="frame" x="239" y="60" width="15" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="15" id="8dX-aD-tMC"/>
+                            <constraint firstAttribute="width" secondItem="F2S-On-pOh" secondAttribute="height" multiplier="1:1" id="kAv-DZ-phF"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10:10 AM" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7J7-Mt-Gg4">
+                        <rect key="frame" x="262" y="10" width="50" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="50" id="pEJ-bA-MNz"/>
+                            <constraint firstAttribute="height" constant="15" id="s5D-f8-sRG"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="24c-aC-pQG">
+                        <rect key="frame" x="262" y="35" width="50" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="50" id="K7A-DU-i1L"/>
+                            <constraint firstAttribute="height" constant="15" id="d7g-Bh-ZBH"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="T1" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CG5-Y6-dyT" userLabel="Order Dining Table Label">
+                        <rect key="frame" x="262" y="60" width="50" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="15" id="kzO-Nj-IeE"/>
+                            <constraint firstAttribute="width" constant="50" id="rEW-Hj-OwY"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Curent Diners" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BeU-1W-bb0">
+                        <rect key="frame" x="8" y="36" width="223" height="10"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="10" id="tJE-Y3-QfQ"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="10"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DinerNamesLabel" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cQu-uy-CDu">
+                        <rect key="frame" x="8" y="54" width="223" height="23"/>
+                        <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="10"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="CG5-Y6-dyT" firstAttribute="width" secondItem="24c-aC-pQG" secondAttribute="width" id="0Y3-LF-Y7D"/>
+                    <constraint firstItem="F2S-On-pOh" firstAttribute="leading" secondItem="cQu-uy-CDu" secondAttribute="trailing" constant="8" id="1hm-rz-wqE"/>
+                    <constraint firstItem="Fhe-k3-hfP" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="2" id="9K9-qf-TPg"/>
+                    <constraint firstItem="cQu-uy-CDu" firstAttribute="bottom" secondItem="H2p-sc-9uM" secondAttribute="bottomMargin" id="D8w-w1-CsS"/>
+                    <constraint firstItem="Inx-YR-gbp" firstAttribute="trailing" secondItem="Fhe-k3-hfP" secondAttribute="trailing" id="Dhs-R9-vFP"/>
+                    <constraint firstItem="7J7-Mt-Gg4" firstAttribute="bottom" secondItem="Fhe-k3-hfP" secondAttribute="bottom" id="Hfi-qi-Fzt"/>
+                    <constraint firstItem="Inx-YR-gbp" firstAttribute="leading" secondItem="BeU-1W-bb0" secondAttribute="trailing" constant="8" id="Mjy-cc-ORR"/>
+                    <constraint firstItem="HCw-dI-wti" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="RuA-Gn-Ov0"/>
+                    <constraint firstItem="dR9-eR-QRE" firstAttribute="leading" secondItem="HCw-dI-wti" secondAttribute="trailing" constant="8" id="VAI-NF-QDM"/>
+                    <constraint firstItem="dR9-eR-QRE" firstAttribute="bottom" secondItem="HCw-dI-wti" secondAttribute="bottom" id="VQ5-LF-8lJ"/>
+                    <constraint firstItem="HCw-dI-wti" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="Vhk-4U-CfQ"/>
+                    <constraint firstItem="Fhe-k3-hfP" firstAttribute="leading" secondItem="dR9-eR-QRE" secondAttribute="trailing" constant="8" id="Wzs-o7-QxL"/>
+                    <constraint firstItem="CG5-Y6-dyT" firstAttribute="top" secondItem="F2S-On-pOh" secondAttribute="top" id="agl-ll-2pX"/>
+                    <constraint firstItem="BeU-1W-bb0" firstAttribute="top" secondItem="dR9-eR-QRE" secondAttribute="bottom" constant="8" id="c6y-A1-szb"/>
+                    <constraint firstItem="CG5-Y6-dyT" firstAttribute="height" secondItem="24c-aC-pQG" secondAttribute="height" id="chV-tx-4iO"/>
+                    <constraint firstItem="Inx-YR-gbp" firstAttribute="top" secondItem="Fhe-k3-hfP" secondAttribute="bottom" constant="10" id="ey3-N1-LAz"/>
+                    <constraint firstItem="7J7-Mt-Gg4" firstAttribute="leading" secondItem="Fhe-k3-hfP" secondAttribute="trailing" constant="8" id="iaV-nP-SVS"/>
+                    <constraint firstItem="7J7-Mt-Gg4" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="okc-J1-xQp"/>
+                    <constraint firstItem="24c-aC-pQG" firstAttribute="leading" secondItem="7J7-Mt-Gg4" secondAttribute="leading" id="pBC-qj-YqT"/>
+                    <constraint firstItem="F2S-On-pOh" firstAttribute="trailing" secondItem="Fhe-k3-hfP" secondAttribute="trailing" id="pho-oy-MFJ"/>
+                    <constraint firstItem="cQu-uy-CDu" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="vBL-d2-BSl"/>
+                    <constraint firstItem="F2S-On-pOh" firstAttribute="top" secondItem="Inx-YR-gbp" secondAttribute="bottom" constant="10" id="ve9-LT-xO0"/>
+                    <constraint firstItem="CG5-Y6-dyT" firstAttribute="leading" secondItem="F2S-On-pOh" secondAttribute="trailing" constant="8" id="vfr-uj-BeE"/>
+                    <constraint firstItem="cQu-uy-CDu" firstAttribute="top" secondItem="BeU-1W-bb0" secondAttribute="bottom" constant="8" id="xID-Dg-DMj"/>
+                    <constraint firstItem="24c-aC-pQG" firstAttribute="bottom" secondItem="Inx-YR-gbp" secondAttribute="bottom" id="zfd-Aj-XGL"/>
+                    <constraint firstItem="BeU-1W-bb0" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="ziC-eC-Y2Z"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="dinerNamesLabel" destination="cQu-uy-CDu" id="R3x-2w-6D5"/>
+                <outlet property="orderCheckinTimeLabel" destination="7J7-Mt-Gg4" id="iEL-WK-heV"/>
+                <outlet property="orderGroupCountLabel" destination="24c-aC-pQG" id="wPf-O6-1ek"/>
+                <outlet property="orderGroupInitialLabel" destination="HCw-dI-wti" id="xVc-Ro-pue"/>
+                <outlet property="orderGroupNameLabel" destination="dR9-eR-QRE" id="g8R-uh-4us"/>
+            </connections>
+            <point key="canvasLocation" x="12" y="-79"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Clock" width="25" height="25"/>
+        <image name="DiningTable" width="16" height="16"/>
+        <image name="GroupCount" width="25" height="25"/>
+    </resources>
+</document>

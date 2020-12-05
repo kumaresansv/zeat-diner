@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="sectionHeader" rowHeight="102" id="KGk-i7-Jjw" customClass="MenuSectionHeaderViewCell" customModule="Zeat_diner" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="59"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="58.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wju-ZO-EU4">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="58"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Section Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="arm-vG-Jpm">
+                                <rect key="frame" x="0.0" y="8" width="320" height="18"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="18" id="nIa-o4-F4t"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Subsection Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HKr-yU-01E">
+                                <rect key="frame" x="0.0" y="34" width="320" height="16"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="HKr-yU-01E" firstAttribute="leading" secondItem="wju-ZO-EU4" secondAttribute="leading" id="76e-KP-CQT"/>
+                            <constraint firstItem="HKr-yU-01E" firstAttribute="top" secondItem="arm-vG-Jpm" secondAttribute="bottom" constant="8" id="Ak9-vk-Jjs"/>
+                            <constraint firstAttribute="bottom" secondItem="HKr-yU-01E" secondAttribute="bottom" constant="8" id="KYJ-Ad-2tH"/>
+                            <constraint firstAttribute="height" constant="58" id="ZgW-68-DaA"/>
+                            <constraint firstItem="arm-vG-Jpm" firstAttribute="top" secondItem="wju-ZO-EU4" secondAttribute="top" constant="8" id="aep-Is-VGf"/>
+                            <constraint firstAttribute="trailing" secondItem="HKr-yU-01E" secondAttribute="trailing" id="aq0-Dx-EYj"/>
+                            <constraint firstAttribute="trailing" secondItem="arm-vG-Jpm" secondAttribute="trailing" id="hg0-jN-bQW"/>
+                            <constraint firstItem="arm-vG-Jpm" firstAttribute="leading" secondItem="wju-ZO-EU4" secondAttribute="leading" id="sYx-53-8FU"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="wju-ZO-EU4" secondAttribute="bottom" id="AqJ-9S-UeF"/>
+                    <constraint firstAttribute="trailing" secondItem="wju-ZO-EU4" secondAttribute="trailing" id="FAn-Vm-Kb7"/>
+                    <constraint firstItem="wju-ZO-EU4" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="NL3-Vu-UFH"/>
+                    <constraint firstItem="wju-ZO-EU4" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="gZi-PS-4k8"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="sectionNameLabel" destination="arm-vG-Jpm" id="j6T-lQ-b85"/>
+                <outlet property="subsectionNameLabel" destination="HKr-yU-01E" id="Wr6-cd-KGM"/>
+            </connections>
+            <point key="canvasLocation" x="32" y="32"/>
+        </tableViewCell>
+    </objects>
+</document>

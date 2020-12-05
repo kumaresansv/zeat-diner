@@ -1,0 +1,56 @@
+PODS:
+  - Alamofire (4.9.1)
+  - AlamofireImage (3.6.0):
+    - Alamofire (~> 4.9)
+  - AWSCognitoIdentityProvider (2.15.1):
+    - AWSCognitoIdentityProviderASF (= 1.0.1)
+    - AWSCore (= 2.15.1)
+  - AWSCognitoIdentityProviderASF (1.0.1)
+  - AWSCore (2.15.1)
+  - AWSSNS (2.15.1):
+    - AWSCore (= 2.15.1)
+  - Eureka (5.2.1)
+  - GoogleMaps/Base (3.10.0)
+  - GooglePlaces (3.10.0):
+    - GoogleMaps/Base (= 3.10.0)
+  - NVActivityIndicatorView (5.0.1):
+    - NVActivityIndicatorView/Base (= 5.0.1)
+  - NVActivityIndicatorView/Base (5.0.1)
+
+DEPENDENCIES:
+  - Alamofire
+  - AlamofireImage
+  - AWSCognitoIdentityProvider
+  - AWSSNS
+  - Eureka
+  - GooglePlaces
+  - NVActivityIndicatorView
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - AlamofireImage
+    - AWSCognitoIdentityProvider
+    - AWSCognitoIdentityProviderASF
+    - AWSCore
+    - AWSSNS
+    - Eureka
+    - GoogleMaps
+    - GooglePlaces
+    - NVActivityIndicatorView
+
+SPEC CHECKSUMS:
+  Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
+  AlamofireImage: be9963c6582d68b39e89191f64c82a7d7bf40fdd
+  AWSCognitoIdentityProvider: 5172f21b3530adbb1549501cd26e126bb211b85c
+  AWSCognitoIdentityProviderASF: f94f1a502e72ef3d0a1de93e10bf7a79c8698118
+  AWSCore: 7dec5eefb9b95739adec68dcb3dba2a6770376a6
+  AWSSNS: 31d7dfbac122792bf8ff3087182e6cefc1f7561d
+  Eureka: c883105488e05bc65539f583246ecf9657cabbfe
+  GoogleMaps: 8c080862ff2748ece9929471b30feb56a6c5079d
+  GooglePlaces: 9a6f5f3a0c88da2aa1bf7426a65d3e004f5e69a1
+  NVActivityIndicatorView: 738e843cb8924e9e4fc3e559d0728031624bf860
+
+PODFILE CHECKSUM: 4c7b1b12cb3c56118a4f191ed654db23eec7f4cf
+
+COCOAPODS: 1.5.3

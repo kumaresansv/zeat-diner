@@ -1,0 +1,1146 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 53;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		57A91CE3BA47903024063AFA /* Pods_Zeat_diner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D59E39E25B130EBF04DE25E /* Pods_Zeat_diner.framework */; };
+		A959424124EB7F13002AC9D8 /* AWSRegistration.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A94DF3B81ECF1C08008943E8 /* AWSRegistration.storyboard */; };
+		A9889798216AEF23005D2ED5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A91BA1681DDCF321000E8D85 /* Assets.xcassets */; };
+		A9889799216AEF23005D2ED5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A91BA16A1DDCF321000E8D85 /* LaunchScreen.storyboard */; };
+		A988979A216AEF64005D2ED5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91BA15F1DDCF321000E8D85 /* AppDelegate.swift */; };
+		A988979B216AEF84005D2ED5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A9BCE0E11DE30FE300DD9929 /* GoogleService-Info.plist */; };
+		A988979D216AEFDB005D2ED5 /* AWSRegistrationMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94DF3BA1ECF1C4F008943E8 /* AWSRegistrationMainViewController.swift */; };
+		A988979E216AEFE4005D2ED5 /* AWSRegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94DF3C11ECF9885008943E8 /* AWSRegistrationViewController.swift */; };
+		A988979F216AEFE8005D2ED5 /* AWSPhoneValidationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94DF3C31ECFABA6008943E8 /* AWSPhoneValidationViewController.swift */; };
+		A98897A0216AEFFE005D2ED5 /* AWSLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94DF3C51ED35B3C008943E8 /* AWSLoginViewController.swift */; };
+		A98897A1216AF002005D2ED5 /* ZeatAWSIdentityProviderManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A983917C1EDFFDD0002BD25D /* ZeatAWSIdentityProviderManager.swift */; };
+		A98897A2216AF005005D2ED5 /* ZeatNavigationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A984304A1E4E8474008F98B6 /* ZeatNavigationDelegate.swift */; };
+		A98897A3216AF008005D2ED5 /* ZeatViewControllerAnimatedTransitioning.swift in Sources */ = {isa = PBXBuildFile; fileRef = A984304D1E4E854B008F98B6 /* ZeatViewControllerAnimatedTransitioning.swift */; };
+		A98897A4216AF00E005D2ED5 /* RestaurantTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D7CAF31E176FB2009A207E /* RestaurantTableCell.swift */; };
+		A98897A5216AF00E005D2ED5 /* RestaurantTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9D7CAF41E176FB2009A207E /* RestaurantTableCell.xib */; };
+		A98897A6216AF00E005D2ED5 /* DineinTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9E489DB1E70A1040028FE7F /* DineinTableViewCell.swift */; };
+		A98897A7216AF00E005D2ED5 /* DineinTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9E489DC1E70A1040028FE7F /* DineinTableViewCell.xib */; };
+		A98897A8216AF00E005D2ED5 /* MenuItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9B2B1221E76E33A0040B03C /* MenuItemTableViewCell.swift */; };
+		A98897A9216AF00E005D2ED5 /* MenuItemTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9B2B1231E76E33A0040B03C /* MenuItemTableViewCell.xib */; };
+		A98897AA216AF00E005D2ED5 /* MenuItemWithImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9B2B1261E76E3980040B03C /* MenuItemWithImageTableViewCell.swift */; };
+		A98897AB216AF00E005D2ED5 /* MenuItemWithImageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9B2B1271E76E3980040B03C /* MenuItemWithImageTableViewCell.xib */; };
+		A98897AC216AF00E005D2ED5 /* MenuSectionHeaderViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A96EC1811EA185C0007FCB2D /* MenuSectionHeaderViewCell.swift */; };
+		A98897AD216AF00E005D2ED5 /* MenuSectionHeaderViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A96EC1821EA185C0007FCB2D /* MenuSectionHeaderViewCell.xib */; };
+		A98897AE216AF00E005D2ED5 /* ItemOptionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D957081EAEF28900AD84CA /* ItemOptionCell.swift */; };
+		A98897AF216AF00E005D2ED5 /* ItemOptionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9D957091EAEF28900AD84CA /* ItemOptionCell.xib */; };
+		A98897B0216AF00E005D2ED5 /* ItemOptionHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9C752161EB2D5EE00A62A8B /* ItemOptionHeader.xib */; };
+		A98897B1216AF00E005D2ED5 /* ItemOptionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C752181EB2DEDE00A62A8B /* ItemOptionHeader.swift */; };
+		A98897B2216AF00E005D2ED5 /* ItemHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A995B35B1EB4E94100F1183B /* ItemHeader.swift */; };
+		A98897B3216AF00E005D2ED5 /* ItemHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = A995B3591EB4DFFF00F1183B /* ItemHeader.xib */; };
+		A98897B4216AF00E005D2ED5 /* RestaurantMenuHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9B8DE511F9A4BF7007CDEAA /* RestaurantMenuHeader.swift */; };
+		A98897B5216AF00E005D2ED5 /* RestaurantMenuHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9B8DE551F9B434E007CDEAA /* RestaurantMenuHeader.xib */; };
+		A98897B6216AF00E005D2ED5 /* DinerRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92B6A4D1FAFA7B4008DCC3F /* DinerRow.swift */; };
+		A98897B7216AF00E005D2ED5 /* DinerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9079E5F1FE6B4FF000ECC8F /* DinerCell.swift */; };
+		A98897B8216AF00E005D2ED5 /* OrderItemRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9079E631FE75785000ECC8F /* OrderItemRow.swift */; };
+		A98897B9216AF00E005D2ED5 /* OrderItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9079E651FEB5D5B000ECC8F /* OrderItemTableViewCell.swift */; };
+		A98897BA216AF00E005D2ED5 /* OrderItemTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9079E661FEB5D5B000ECC8F /* OrderItemTableViewCell.xib */; };
+		A98897BB216AF019005D2ED5 /* Order.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9079E5D1FE29048000ECC8F /* Order.storyboard */; };
+		A98897BC216AF019005D2ED5 /* CurrentOrderTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92B6A4B1FAF64C8008DCC3F /* CurrentOrderTableViewController.swift */; };
+		A98897BD216AF019005D2ED5 /* CurrentOrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90DD2F91FB14D43005DDEE8 /* CurrentOrderViewController.swift */; };
+		A98897BE216AF01D005D2ED5 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A946FD611E3E89FA00AA793C /* ProfileViewController.swift */; };
+		A98897BF216AF027005D2ED5 /* ZeatTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A937EB191FA6A75E00612671 /* ZeatTabBarViewController.swift */; };
+		A98897C0216AF02A005D2ED5 /* ZeatNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A937EB1B1FA6AC1D00612671 /* ZeatNavigationController.swift */; };
+		A98897C1216AF037005D2ED5 /* RestaurantService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94ACCC71E87459C000D54C0 /* RestaurantService.swift */; };
+		A98897C2216AF037005D2ED5 /* OrderService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94ACCC41E872D0B000D54C0 /* OrderService.swift */; };
+		A98897C3216AF037005D2ED5 /* DinerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94ACCC11E870216000D54C0 /* DinerService.swift */; };
+		A98897C4216AF03F005D2ED5 /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94ACCCC1E8D2759000D54C0 /* Menu.swift */; };
+		A98897C5216AF03F005D2ED5 /* MenuSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94ACCCE1E8D291C000D54C0 /* MenuSection.swift */; };
+		A98897C6216AF03F005D2ED5 /* MenuSubsection.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94ACCD11E8D29BE000D54C0 /* MenuSubsection.swift */; };
+		A98897C7216AF03F005D2ED5 /* MenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94ACCD31E8D2A64000D54C0 /* MenuItem.swift */; };
+		A98897C8216AF03F005D2ED5 /* MenuItemOptionGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94ACCD51E8D2B9C000D54C0 /* MenuItemOptionGroup.swift */; };
+		A98897C9216AF03F005D2ED5 /* MenuItemOptionValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94ACCD71E8D2C28000D54C0 /* MenuItemOptionValue.swift */; };
+		A98897CA216AF03F005D2ED5 /* ShortMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = A943A9981F434B61005847FC /* ShortMenu.swift */; };
+		A98897CB216AF03F005D2ED5 /* MenuDuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = A943A99A1F434BB9005847FC /* MenuDuration.swift */; };
+		A98897CC216AF045005D2ED5 /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D196191E0391AD00593E7A /* Restaurant.swift */; };
+		A98897CD216AF045005D2ED5 /* DiningTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A983AF8B1E6C1FC7009560C4 /* DiningTable.swift */; };
+		A98897CE216AF045005D2ED5 /* GeoPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = A912E4581F423BE1003D468E /* GeoPoint.swift */; };
+		A98897CF216AF04A005D2ED5 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92AEB191E6C05F400EB8526 /* Order.swift */; };
+		A98897D0216AF04A005D2ED5 /* OrderDiner.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92AEB1B1E6C069F00EB8526 /* OrderDiner.swift */; };
+		A98897D1216AF04A005D2ED5 /* OrderItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9AE96251EC29F70009EB758 /* OrderItem.swift */; };
+		A98897D2216AF04A005D2ED5 /* Cart.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9AE96271EC7CB83009EB758 /* Cart.swift */; };
+		A98897D3216AF04A005D2ED5 /* CartDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9AE96291EC8A516009EB758 /* CartDetail.swift */; };
+		A98897D4216AF04A005D2ED5 /* OrderItemOptionGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90DECD71FC8D74B003325AE /* OrderItemOptionGroup.swift */; };
+		A98897D5216AF04A005D2ED5 /* OrderItemOptionValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90DECD91FC8F9A2003325AE /* OrderItemOptionValue.swift */; };
+		A98897D6216AF04F005D2ED5 /* Diner.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9082A5F1DDFA4240044D418 /* Diner.swift */; };
+		A98897D7216AF04F005D2ED5 /* DinerToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9082A6A1DE095FD0044D418 /* DinerToken.swift */; };
+		A98897D8216AF056005D2ED5 /* ZeatServiceConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9082A641DDFEC6C0044D418 /* ZeatServiceConstants.swift */; };
+		A98897D9216AF056005D2ED5 /* ZeatUserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9082A661DE081FB0044D418 /* ZeatUserDefaults.swift */; };
+		A98897DA216AF056005D2ED5 /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9082A681DE08DC30044D418 /* JSON.swift */; };
+		A98897DB216AF056005D2ED5 /* ZeatAlerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9AAC45F1DE299F30043DFC5 /* ZeatAlerts.swift */; };
+		A98897DC216AF056005D2ED5 /* ZeatErrorTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9AAC4611DE2FCFC0043DFC5 /* ZeatErrorTypes.swift */; };
+		A98897DD216AF056005D2ED5 /* ZeatError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F38DA61E7CFB6A007AC67C /* ZeatError.swift */; };
+		A98897DE216AF056005D2ED5 /* ZeatUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94ACCC91E880462000D54C0 /* ZeatUtility.swift */; };
+		A98897DF216AF056005D2ED5 /* ZeatUnusedCodeForFutureReference.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9AE96211EC1E6A3009EB758 /* ZeatUnusedCodeForFutureReference.swift */; };
+		A98897E0216AF056005D2ED5 /* ZeatSharedData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9AE96231EC28D70009EB758 /* ZeatSharedData.swift */; };
+		A98897E1216AF056005D2ED5 /* ZeatConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94DF3BF1ECF4F6F008943E8 /* ZeatConstants.swift */; };
+		A98897E2216AF056005D2ED5 /* JSONStringArrayEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91EDBC91F5E88CD006B3A08 /* JSONStringArrayEncoding.swift */; };
+		A98897E3216AF056005D2ED5 /* ZeatExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A900ED4F1FF1D3760075F32F /* ZeatExtensions.swift */; };
+		A98897E4216AF0E8005D2ED5 /* RestaurantDineInController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92AEB151E690FE100EB8526 /* RestaurantDineInController.swift */; };
+		A98897E5216AF0E8005D2ED5 /* RestaurantDineInController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A92AEB161E690FE100EB8526 /* RestaurantDineInController.xib */; };
+		A98897E6216AF0E8005D2ED5 /* RestaurantNewTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9E489E71E739E960028FE7F /* RestaurantNewTableController.swift */; };
+		A98897E7216AF0E8005D2ED5 /* RestaurantItemOptionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D957061EADB82700AD84CA /* RestaurantItemOptionController.swift */; };
+		A98897E8216AF0E8005D2ED5 /* RestaurantItemController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A952517E1EBD60F500A2097E /* RestaurantItemController.swift */; };
+		A98897E9216AF0E8005D2ED5 /* RestaurantListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A955B9D11F75FE0E00A67EF3 /* RestaurantListViewController.swift */; };
+		A98897EA216AF0E8005D2ED5 /* CitySearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92570CF1F87D67F001B8A8A /* CitySearchViewController.swift */; };
+		A98897EB216AF0E8005D2ED5 /* RestauranMenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9B8DE531F9B32EB007CDEAA /* RestauranMenuTableViewController.swift */; };
+		A98897EC216AF516005D2ED5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A91BA1651DDCF321000E8D85 /* Main.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A91BA1731DDCF322000E8D85 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A91BA1541DDCF321000E8D85 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A91BA15B1DDCF321000E8D85;
+			remoteInfo = "Zeat-diner";
+		};
+		A91BA17E1DDCF322000E8D85 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A91BA1541DDCF321000E8D85 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A91BA15B1DDCF321000E8D85;
+			remoteInfo = "Zeat-diner";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4298BA194B170C2EA03618DC /* Pods-Zeat-diner.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Zeat-diner.release.xcconfig"; path = "Pods/Target Support Files/Pods-Zeat-diner/Pods-Zeat-diner.release.xcconfig"; sourceTree = "<group>"; };
+		7D59E39E25B130EBF04DE25E /* Pods_Zeat_diner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Zeat_diner.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A0DB449608B8C01280D2DB02 /* Pods-Zeat-diner.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Zeat-diner.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Zeat-diner/Pods-Zeat-diner.debug.xcconfig"; sourceTree = "<group>"; };
+		A900ED4F1FF1D3760075F32F /* ZeatExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZeatExtensions.swift; sourceTree = "<group>"; };
+		A9079E5D1FE29048000ECC8F /* Order.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Order.storyboard; sourceTree = "<group>"; };
+		A9079E5F1FE6B4FF000ECC8F /* DinerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DinerCell.swift; sourceTree = "<group>"; };
+		A9079E631FE75785000ECC8F /* OrderItemRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderItemRow.swift; sourceTree = "<group>"; };
+		A9079E651FEB5D5B000ECC8F /* OrderItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderItemTableViewCell.swift; sourceTree = "<group>"; };
+		A9079E661FEB5D5B000ECC8F /* OrderItemTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OrderItemTableViewCell.xib; sourceTree = "<group>"; };
+		A9082A5F1DDFA4240044D418 /* Diner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Diner.swift; sourceTree = "<group>"; };
+		A9082A641DDFEC6C0044D418 /* ZeatServiceConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = ZeatServiceConstants.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		A9082A661DE081FB0044D418 /* ZeatUserDefaults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZeatUserDefaults.swift; sourceTree = "<group>"; };
+		A9082A681DE08DC30044D418 /* JSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSON.swift; sourceTree = "<group>"; };
+		A9082A6A1DE095FD0044D418 /* DinerToken.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DinerToken.swift; sourceTree = "<group>"; };
+		A90DD2F91FB14D43005DDEE8 /* CurrentOrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentOrderViewController.swift; sourceTree = "<group>"; };
+		A90DECD71FC8D74B003325AE /* OrderItemOptionGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderItemOptionGroup.swift; sourceTree = "<group>"; };
+		A90DECD91FC8F9A2003325AE /* OrderItemOptionValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderItemOptionValue.swift; sourceTree = "<group>"; };
+		A912E4581F423BE1003D468E /* GeoPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoPoint.swift; sourceTree = "<group>"; };
+		A91BA15F1DDCF321000E8D85 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A91BA1661DDCF321000E8D85 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A91BA1681DDCF321000E8D85 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A91BA16B1DDCF321000E8D85 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A91BA16D1DDCF321000E8D85 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A91BA18F1DDCF327000E8D85 /* Zeat-diner.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Zeat-diner.entitlements"; sourceTree = "<group>"; };
+		A91BA1901DDD1BCD000E8D85 /* Registration.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Registration.storyboard; sourceTree = "<group>"; };
+		A91BA1931DDD5B0E000E8D85 /* RegistrationOrLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationOrLoginViewController.swift; sourceTree = "<group>"; };
+		A91C56591DE6262C0006DF4C /* RegistrationUpdateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationUpdateViewController.swift; sourceTree = "<group>"; };
+		A91EDBC91F5E88CD006B3A08 /* JSONStringArrayEncoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONStringArrayEncoding.swift; sourceTree = "<group>"; };
+		A92570CF1F87D67F001B8A8A /* CitySearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitySearchViewController.swift; sourceTree = "<group>"; };
+		A92AEB151E690FE100EB8526 /* RestaurantDineInController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantDineInController.swift; sourceTree = "<group>"; };
+		A92AEB161E690FE100EB8526 /* RestaurantDineInController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RestaurantDineInController.xib; sourceTree = "<group>"; };
+		A92AEB191E6C05F400EB8526 /* Order.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
+		A92AEB1B1E6C069F00EB8526 /* OrderDiner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderDiner.swift; sourceTree = "<group>"; };
+		A92B6A4B1FAF64C8008DCC3F /* CurrentOrderTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentOrderTableViewController.swift; sourceTree = "<group>"; };
+		A92B6A4D1FAFA7B4008DCC3F /* DinerRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DinerRow.swift; sourceTree = "<group>"; };
+		A937EB191FA6A75E00612671 /* ZeatTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZeatTabBarViewController.swift; sourceTree = "<group>"; };
+		A937EB1B1FA6AC1D00612671 /* ZeatNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZeatNavigationController.swift; sourceTree = "<group>"; };
+		A943A9981F434B61005847FC /* ShortMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortMenu.swift; sourceTree = "<group>"; };
+		A943A99A1F434BB9005847FC /* MenuDuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuDuration.swift; sourceTree = "<group>"; };
+		A9446F1C24F4B35900540C0B /* Zeat-dinerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Zeat-dinerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9446F1D24F4B35900540C0B /* Zeat-dinerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Zeat-dinerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A946FD611E3E89FA00AA793C /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		A94ACCC11E870216000D54C0 /* DinerService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DinerService.swift; sourceTree = "<group>"; };
+		A94ACCC41E872D0B000D54C0 /* OrderService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = OrderService.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		A94ACCC71E87459C000D54C0 /* RestaurantService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = RestaurantService.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		A94ACCC91E880462000D54C0 /* ZeatUtility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZeatUtility.swift; sourceTree = "<group>"; };
+		A94ACCCC1E8D2759000D54C0 /* Menu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
+		A94ACCCE1E8D291C000D54C0 /* MenuSection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuSection.swift; sourceTree = "<group>"; };
+		A94ACCD11E8D29BE000D54C0 /* MenuSubsection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuSubsection.swift; sourceTree = "<group>"; };
+		A94ACCD31E8D2A64000D54C0 /* MenuItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuItem.swift; sourceTree = "<group>"; };
+		A94ACCD51E8D2B9C000D54C0 /* MenuItemOptionGroup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuItemOptionGroup.swift; sourceTree = "<group>"; };
+		A94ACCD71E8D2C28000D54C0 /* MenuItemOptionValue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuItemOptionValue.swift; sourceTree = "<group>"; };
+		A94DF3B81ECF1C08008943E8 /* AWSRegistration.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AWSRegistration.storyboard; sourceTree = "<group>"; };
+		A94DF3BA1ECF1C4F008943E8 /* AWSRegistrationMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AWSRegistrationMainViewController.swift; sourceTree = "<group>"; };
+		A94DF3BF1ECF4F6F008943E8 /* ZeatConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZeatConstants.swift; sourceTree = "<group>"; };
+		A94DF3C11ECF9885008943E8 /* AWSRegistrationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AWSRegistrationViewController.swift; sourceTree = "<group>"; };
+		A94DF3C31ECFABA6008943E8 /* AWSPhoneValidationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AWSPhoneValidationViewController.swift; sourceTree = "<group>"; };
+		A94DF3C51ED35B3C008943E8 /* AWSLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AWSLoginViewController.swift; sourceTree = "<group>"; };
+		A952517E1EBD60F500A2097E /* RestaurantItemController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantItemController.swift; sourceTree = "<group>"; };
+		A955B9D11F75FE0E00A67EF3 /* RestaurantListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantListViewController.swift; sourceTree = "<group>"; };
+		A96EC1811EA185C0007FCB2D /* MenuSectionHeaderViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuSectionHeaderViewCell.swift; sourceTree = "<group>"; };
+		A96EC1821EA185C0007FCB2D /* MenuSectionHeaderViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MenuSectionHeaderViewCell.xib; sourceTree = "<group>"; };
+		A983917C1EDFFDD0002BD25D /* ZeatAWSIdentityProviderManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZeatAWSIdentityProviderManager.swift; sourceTree = "<group>"; };
+		A983AF8B1E6C1FC7009560C4 /* DiningTable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiningTable.swift; sourceTree = "<group>"; };
+		A984304A1E4E8474008F98B6 /* ZeatNavigationDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZeatNavigationDelegate.swift; sourceTree = "<group>"; };
+		A984304D1E4E854B008F98B6 /* ZeatViewControllerAnimatedTransitioning.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZeatViewControllerAnimatedTransitioning.swift; sourceTree = "<group>"; };
+		A9889792216AEB98005D2ED5 /* Zeat-diner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Zeat-diner.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A995B3591EB4DFFF00F1183B /* ItemHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ItemHeader.xib; sourceTree = "<group>"; };
+		A995B35B1EB4E94100F1183B /* ItemHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemHeader.swift; sourceTree = "<group>"; };
+		A9A885B31DDDE099007BE77C /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		A9AAC45F1DE299F30043DFC5 /* ZeatAlerts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZeatAlerts.swift; sourceTree = "<group>"; };
+		A9AAC4611DE2FCFC0043DFC5 /* ZeatErrorTypes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZeatErrorTypes.swift; sourceTree = "<group>"; };
+		A9AE96211EC1E6A3009EB758 /* ZeatUnusedCodeForFutureReference.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZeatUnusedCodeForFutureReference.swift; sourceTree = "<group>"; };
+		A9AE96231EC28D70009EB758 /* ZeatSharedData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZeatSharedData.swift; sourceTree = "<group>"; };
+		A9AE96251EC29F70009EB758 /* OrderItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderItem.swift; sourceTree = "<group>"; };
+		A9AE96271EC7CB83009EB758 /* Cart.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cart.swift; sourceTree = "<group>"; };
+		A9AE96291EC8A516009EB758 /* CartDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CartDetail.swift; sourceTree = "<group>"; };
+		A9B2B1221E76E33A0040B03C /* MenuItemTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuItemTableViewCell.swift; sourceTree = "<group>"; };
+		A9B2B1231E76E33A0040B03C /* MenuItemTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MenuItemTableViewCell.xib; sourceTree = "<group>"; };
+		A9B2B1261E76E3980040B03C /* MenuItemWithImageTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuItemWithImageTableViewCell.swift; sourceTree = "<group>"; };
+		A9B2B1271E76E3980040B03C /* MenuItemWithImageTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MenuItemWithImageTableViewCell.xib; sourceTree = "<group>"; };
+		A9B8DE511F9A4BF7007CDEAA /* RestaurantMenuHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantMenuHeader.swift; sourceTree = "<group>"; };
+		A9B8DE531F9B32EB007CDEAA /* RestauranMenuTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestauranMenuTableViewController.swift; sourceTree = "<group>"; };
+		A9B8DE551F9B434E007CDEAA /* RestaurantMenuHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RestaurantMenuHeader.xib; sourceTree = "<group>"; };
+		A9BCE0E11DE30FE300DD9929 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		A9BCE0E31DE53D6500DD9929 /* RegistrationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
+		A9C752161EB2D5EE00A62A8B /* ItemOptionHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ItemOptionHeader.xib; sourceTree = "<group>"; };
+		A9C752181EB2DEDE00A62A8B /* ItemOptionHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemOptionHeader.swift; sourceTree = "<group>"; };
+		A9D196191E0391AD00593E7A /* Restaurant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
+		A9D7CAF31E176FB2009A207E /* RestaurantTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantTableCell.swift; sourceTree = "<group>"; };
+		A9D7CAF41E176FB2009A207E /* RestaurantTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RestaurantTableCell.xib; sourceTree = "<group>"; };
+		A9D957061EADB82700AD84CA /* RestaurantItemOptionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantItemOptionController.swift; sourceTree = "<group>"; };
+		A9D957081EAEF28900AD84CA /* ItemOptionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemOptionCell.swift; sourceTree = "<group>"; };
+		A9D957091EAEF28900AD84CA /* ItemOptionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ItemOptionCell.xib; sourceTree = "<group>"; };
+		A9E489DB1E70A1040028FE7F /* DineinTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DineinTableViewCell.swift; sourceTree = "<group>"; };
+		A9E489DC1E70A1040028FE7F /* DineinTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DineinTableViewCell.xib; sourceTree = "<group>"; };
+		A9E489E71E739E960028FE7F /* RestaurantNewTableController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantNewTableController.swift; sourceTree = "<group>"; };
+		A9F38DA61E7CFB6A007AC67C /* ZeatError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZeatError.swift; sourceTree = "<group>"; };
+		C95888EC609FFABA94E0196C /* Pods_Zeat_dinerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Zeat_dinerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D560F93C6B58267196EB6C46 /* Pods_Zeat_dinerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Zeat_dinerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A91BA1591DDCF321000E8D85 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				57A91CE3BA47903024063AFA /* Pods_Zeat_diner.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A91BA16F1DDCF322000E8D85 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A91BA17A1DDCF322000E8D85 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A91BA1531DDCF321000E8D85 = {
+			isa = PBXGroup;
+			children = (
+				A91BA15E1DDCF321000E8D85 /* Zeat-diner */,
+				D8D86B7BE7E35CCB8CCDFB12 /* Pods */,
+				D4FD1FF5C07EE7F718799DCB /* Frameworks */,
+				A9889792216AEB98005D2ED5 /* Zeat-diner.app */,
+				A9446F1C24F4B35900540C0B /* Zeat-dinerTests.xctest */,
+				A9446F1D24F4B35900540C0B /* Zeat-dinerUITests.xctest */,
+			);
+			sourceTree = "<group>";
+		};
+		A91BA15E1DDCF321000E8D85 /* Zeat-diner */ = {
+			isa = PBXGroup;
+			children = (
+				A94DF3B31ECF1B65008943E8 /* AWS Cognito */,
+				A984304C1E4E851B008F98B6 /* Extensions */,
+				A9568B0A1DEC5DEE00619354 /* Main */,
+				A9AE962B1EC8A547009EB758 /* Service */,
+				A9BD50951DDE3A7A00A7A278 /* Models */,
+				A9A885B51DDDEC8B007BE77C /* Helper */,
+				A91BA1921DDD1BD4000E8D85 /* RegistrationOld */,
+				A91BA18F1DDCF327000E8D85 /* Zeat-diner.entitlements */,
+				A91BA15F1DDCF321000E8D85 /* AppDelegate.swift */,
+				A91BA1681DDCF321000E8D85 /* Assets.xcassets */,
+				A91BA16A1DDCF321000E8D85 /* LaunchScreen.storyboard */,
+				A9BCE0E11DE30FE300DD9929 /* GoogleService-Info.plist */,
+				A91BA16D1DDCF321000E8D85 /* Info.plist */,
+			);
+			path = "Zeat-diner";
+			sourceTree = "<group>";
+		};
+		A91BA1921DDD1BD4000E8D85 /* RegistrationOld */ = {
+			isa = PBXGroup;
+			children = (
+				A91BA1901DDD1BCD000E8D85 /* Registration.storyboard */,
+				A91BA1931DDD5B0E000E8D85 /* RegistrationOrLoginViewController.swift */,
+				A9A885B31DDDE099007BE77C /* LoginViewController.swift */,
+				A9BCE0E31DE53D6500DD9929 /* RegistrationViewController.swift */,
+				A91C56591DE6262C0006DF4C /* RegistrationUpdateViewController.swift */,
+			);
+			name = RegistrationOld;
+			sourceTree = "<group>";
+		};
+		A94586F41E07502000ED1C9C /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				A946FD611E3E89FA00AA793C /* ProfileViewController.swift */,
+			);
+			name = Others;
+			sourceTree = "<group>";
+		};
+		A94ACCC01E86FEDE000D54C0 /* Diner */ = {
+			isa = PBXGroup;
+			children = (
+				A9082A5F1DDFA4240044D418 /* Diner.swift */,
+				A9082A6A1DE095FD0044D418 /* DinerToken.swift */,
+			);
+			name = Diner;
+			sourceTree = "<group>";
+		};
+		A94ACCC31E872CD0000D54C0 /* Order */ = {
+			isa = PBXGroup;
+			children = (
+				A92AEB191E6C05F400EB8526 /* Order.swift */,
+				A92AEB1B1E6C069F00EB8526 /* OrderDiner.swift */,
+				A9AE96251EC29F70009EB758 /* OrderItem.swift */,
+				A9AE96271EC7CB83009EB758 /* Cart.swift */,
+				A9AE96291EC8A516009EB758 /* CartDetail.swift */,
+				A90DECD71FC8D74B003325AE /* OrderItemOptionGroup.swift */,
+				A90DECD91FC8F9A2003325AE /* OrderItemOptionValue.swift */,
+			);
+			name = Order;
+			sourceTree = "<group>";
+		};
+		A94ACCC61E874472000D54C0 /* Restaurant */ = {
+			isa = PBXGroup;
+			children = (
+				A9D196191E0391AD00593E7A /* Restaurant.swift */,
+				A983AF8B1E6C1FC7009560C4 /* DiningTable.swift */,
+				A912E4581F423BE1003D468E /* GeoPoint.swift */,
+			);
+			name = Restaurant;
+			sourceTree = "<group>";
+		};
+		A94ACCD01E8D299D000D54C0 /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				A94ACCCC1E8D2759000D54C0 /* Menu.swift */,
+				A94ACCCE1E8D291C000D54C0 /* MenuSection.swift */,
+				A94ACCD11E8D29BE000D54C0 /* MenuSubsection.swift */,
+				A94ACCD31E8D2A64000D54C0 /* MenuItem.swift */,
+				A94ACCD51E8D2B9C000D54C0 /* MenuItemOptionGroup.swift */,
+				A94ACCD71E8D2C28000D54C0 /* MenuItemOptionValue.swift */,
+				A943A9981F434B61005847FC /* ShortMenu.swift */,
+				A943A99A1F434BB9005847FC /* MenuDuration.swift */,
+			);
+			name = Menu;
+			sourceTree = "<group>";
+		};
+		A94DF3B31ECF1B65008943E8 /* AWS Cognito */ = {
+			isa = PBXGroup;
+			children = (
+				A94DF3B81ECF1C08008943E8 /* AWSRegistration.storyboard */,
+				A94DF3BA1ECF1C4F008943E8 /* AWSRegistrationMainViewController.swift */,
+				A94DF3C11ECF9885008943E8 /* AWSRegistrationViewController.swift */,
+				A94DF3C31ECFABA6008943E8 /* AWSPhoneValidationViewController.swift */,
+				A94DF3C51ED35B3C008943E8 /* AWSLoginViewController.swift */,
+				A983917C1EDFFDD0002BD25D /* ZeatAWSIdentityProviderManager.swift */,
+			);
+			name = "AWS Cognito";
+			sourceTree = "<group>";
+		};
+		A9568B0A1DEC5DEE00619354 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				A9B2B1211E76E31C0040B03C /* TableCells */,
+				A9B2B1201E76E27E0040B03C /* Orders */,
+				A94586F41E07502000ED1C9C /* Others */,
+				A99710DE1DF4692700D5064E /* Restaurants */,
+				A91BA1651DDCF321000E8D85 /* Main.storyboard */,
+				A937EB191FA6A75E00612671 /* ZeatTabBarViewController.swift */,
+				A937EB1B1FA6AC1D00612671 /* ZeatNavigationController.swift */,
+			);
+			name = Main;
+			sourceTree = "<group>";
+		};
+		A984304C1E4E851B008F98B6 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A984304A1E4E8474008F98B6 /* ZeatNavigationDelegate.swift */,
+				A984304D1E4E854B008F98B6 /* ZeatViewControllerAnimatedTransitioning.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		A99710DE1DF4692700D5064E /* Restaurants */ = {
+			isa = PBXGroup;
+			children = (
+				A92AEB151E690FE100EB8526 /* RestaurantDineInController.swift */,
+				A92AEB161E690FE100EB8526 /* RestaurantDineInController.xib */,
+				A9E489E71E739E960028FE7F /* RestaurantNewTableController.swift */,
+				A9D957061EADB82700AD84CA /* RestaurantItemOptionController.swift */,
+				A952517E1EBD60F500A2097E /* RestaurantItemController.swift */,
+				A955B9D11F75FE0E00A67EF3 /* RestaurantListViewController.swift */,
+				A92570CF1F87D67F001B8A8A /* CitySearchViewController.swift */,
+				A9B8DE531F9B32EB007CDEAA /* RestauranMenuTableViewController.swift */,
+			);
+			name = Restaurants;
+			sourceTree = "<group>";
+		};
+		A9A885B51DDDEC8B007BE77C /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				A9082A641DDFEC6C0044D418 /* ZeatServiceConstants.swift */,
+				A9082A661DE081FB0044D418 /* ZeatUserDefaults.swift */,
+				A9082A681DE08DC30044D418 /* JSON.swift */,
+				A9AAC45F1DE299F30043DFC5 /* ZeatAlerts.swift */,
+				A9AAC4611DE2FCFC0043DFC5 /* ZeatErrorTypes.swift */,
+				A9F38DA61E7CFB6A007AC67C /* ZeatError.swift */,
+				A94ACCC91E880462000D54C0 /* ZeatUtility.swift */,
+				A9AE96211EC1E6A3009EB758 /* ZeatUnusedCodeForFutureReference.swift */,
+				A9AE96231EC28D70009EB758 /* ZeatSharedData.swift */,
+				A94DF3BF1ECF4F6F008943E8 /* ZeatConstants.swift */,
+				A91EDBC91F5E88CD006B3A08 /* JSONStringArrayEncoding.swift */,
+				A900ED4F1FF1D3760075F32F /* ZeatExtensions.swift */,
+			);
+			name = Helper;
+			sourceTree = "<group>";
+		};
+		A9AE962B1EC8A547009EB758 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				A94ACCC71E87459C000D54C0 /* RestaurantService.swift */,
+				A94ACCC41E872D0B000D54C0 /* OrderService.swift */,
+				A94ACCC11E870216000D54C0 /* DinerService.swift */,
+			);
+			name = Service;
+			sourceTree = "<group>";
+		};
+		A9B2B1201E76E27E0040B03C /* Orders */ = {
+			isa = PBXGroup;
+			children = (
+				A9079E5D1FE29048000ECC8F /* Order.storyboard */,
+				A92B6A4B1FAF64C8008DCC3F /* CurrentOrderTableViewController.swift */,
+				A90DD2F91FB14D43005DDEE8 /* CurrentOrderViewController.swift */,
+			);
+			name = Orders;
+			sourceTree = "<group>";
+		};
+		A9B2B1211E76E31C0040B03C /* TableCells */ = {
+			isa = PBXGroup;
+			children = (
+				A9D7CAF31E176FB2009A207E /* RestaurantTableCell.swift */,
+				A9D7CAF41E176FB2009A207E /* RestaurantTableCell.xib */,
+				A9E489DB1E70A1040028FE7F /* DineinTableViewCell.swift */,
+				A9E489DC1E70A1040028FE7F /* DineinTableViewCell.xib */,
+				A9B2B1221E76E33A0040B03C /* MenuItemTableViewCell.swift */,
+				A9B2B1231E76E33A0040B03C /* MenuItemTableViewCell.xib */,
+				A9B2B1261E76E3980040B03C /* MenuItemWithImageTableViewCell.swift */,
+				A9B2B1271E76E3980040B03C /* MenuItemWithImageTableViewCell.xib */,
+				A96EC1811EA185C0007FCB2D /* MenuSectionHeaderViewCell.swift */,
+				A96EC1821EA185C0007FCB2D /* MenuSectionHeaderViewCell.xib */,
+				A9D957081EAEF28900AD84CA /* ItemOptionCell.swift */,
+				A9D957091EAEF28900AD84CA /* ItemOptionCell.xib */,
+				A9C752161EB2D5EE00A62A8B /* ItemOptionHeader.xib */,
+				A9C752181EB2DEDE00A62A8B /* ItemOptionHeader.swift */,
+				A995B35B1EB4E94100F1183B /* ItemHeader.swift */,
+				A995B3591EB4DFFF00F1183B /* ItemHeader.xib */,
+				A9B8DE511F9A4BF7007CDEAA /* RestaurantMenuHeader.swift */,
+				A9B8DE551F9B434E007CDEAA /* RestaurantMenuHeader.xib */,
+				A92B6A4D1FAFA7B4008DCC3F /* DinerRow.swift */,
+				A9079E5F1FE6B4FF000ECC8F /* DinerCell.swift */,
+				A9079E631FE75785000ECC8F /* OrderItemRow.swift */,
+				A9079E651FEB5D5B000ECC8F /* OrderItemTableViewCell.swift */,
+				A9079E661FEB5D5B000ECC8F /* OrderItemTableViewCell.xib */,
+			);
+			name = TableCells;
+			sourceTree = "<group>";
+		};
+		A9BD50951DDE3A7A00A7A278 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A94ACCD01E8D299D000D54C0 /* Menu */,
+				A94ACCC61E874472000D54C0 /* Restaurant */,
+				A94ACCC31E872CD0000D54C0 /* Order */,
+				A94ACCC01E86FEDE000D54C0 /* Diner */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		D4FD1FF5C07EE7F718799DCB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7D59E39E25B130EBF04DE25E /* Pods_Zeat_diner.framework */,
+				D560F93C6B58267196EB6C46 /* Pods_Zeat_dinerTests.framework */,
+				C95888EC609FFABA94E0196C /* Pods_Zeat_dinerUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D8D86B7BE7E35CCB8CCDFB12 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A0DB449608B8C01280D2DB02 /* Pods-Zeat-diner.debug.xcconfig */,
+				4298BA194B170C2EA03618DC /* Pods-Zeat-diner.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A91BA15B1DDCF321000E8D85 /* Zeat-diner */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A91BA1861DDCF322000E8D85 /* Build configuration list for PBXNativeTarget "Zeat-diner" */;
+			buildPhases = (
+				8FEA2E1CF6B8129D65127BD0 /* [CP] Check Pods Manifest.lock */,
+				A91BA1581DDCF321000E8D85 /* Sources */,
+				A91BA1591DDCF321000E8D85 /* Frameworks */,
+				A91BA15A1DDCF321000E8D85 /* Resources */,
+				0D969C048DBF65D5CDF7006F /* [CP] Embed Pods Frameworks */,
+				5571CB9690D4D2B562D6F0BD /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Zeat-diner";
+			productName = "Zeat-diner";
+			productReference = A9889792216AEB98005D2ED5 /* Zeat-diner.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A91BA1711DDCF322000E8D85 /* Zeat-dinerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A91BA1891DDCF322000E8D85 /* Build configuration list for PBXNativeTarget "Zeat-dinerTests" */;
+			buildPhases = (
+				A91BA16E1DDCF322000E8D85 /* Sources */,
+				A91BA16F1DDCF322000E8D85 /* Frameworks */,
+				A91BA1701DDCF322000E8D85 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A91BA1741DDCF322000E8D85 /* PBXTargetDependency */,
+			);
+			name = "Zeat-dinerTests";
+			productName = "Zeat-dinerTests";
+			productReference = A9446F1C24F4B35900540C0B /* Zeat-dinerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A91BA17C1DDCF322000E8D85 /* Zeat-dinerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A91BA18C1DDCF322000E8D85 /* Build configuration list for PBXNativeTarget "Zeat-dinerUITests" */;
+			buildPhases = (
+				A91BA1791DDCF322000E8D85 /* Sources */,
+				A91BA17A1DDCF322000E8D85 /* Frameworks */,
+				A91BA17B1DDCF322000E8D85 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A91BA17F1DDCF322000E8D85 /* PBXTargetDependency */,
+			);
+			name = "Zeat-dinerUITests";
+			productName = "Zeat-dinerUITests";
+			productReference = A9446F1D24F4B35900540C0B /* Zeat-dinerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A91BA1541DDCF321000E8D85 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0810;
+				LastUpgradeCheck = 1160;
+				ORGANIZATIONNAME = Zeat;
+				TargetAttributes = {
+					A91BA15B1DDCF321000E8D85 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = J7U4DHVFXC;
+						LastSwiftMigration = 1010;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
+					};
+					A91BA1711DDCF322000E8D85 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = J7U4DHVFXC;
+						ProvisioningStyle = Automatic;
+						TestTargetID = A91BA15B1DDCF321000E8D85;
+					};
+					A91BA17C1DDCF322000E8D85 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = J7U4DHVFXC;
+						ProvisioningStyle = Automatic;
+						TestTargetID = A91BA15B1DDCF321000E8D85;
+					};
+				};
+			};
+			buildConfigurationList = A91BA1571DDCF321000E8D85 /* Build configuration list for PBXProject "Zeat-diner" */;
+			compatibilityVersion = "Xcode 11.4";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A91BA1531DDCF321000E8D85;
+			productRefGroup = A91BA1531DDCF321000E8D85;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A91BA15B1DDCF321000E8D85 /* Zeat-diner */,
+				A91BA1711DDCF322000E8D85 /* Zeat-dinerTests */,
+				A91BA17C1DDCF322000E8D85 /* Zeat-dinerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A91BA15A1DDCF321000E8D85 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A98897AB216AF00E005D2ED5 /* MenuItemWithImageTableViewCell.xib in Resources */,
+				A98897B0216AF00E005D2ED5 /* ItemOptionHeader.xib in Resources */,
+				A959424124EB7F13002AC9D8 /* AWSRegistration.storyboard in Resources */,
+				A98897BB216AF019005D2ED5 /* Order.storyboard in Resources */,
+				A98897A9216AF00E005D2ED5 /* MenuItemTableViewCell.xib in Resources */,
+				A988979B216AEF84005D2ED5 /* GoogleService-Info.plist in Resources */,
+				A98897EC216AF516005D2ED5 /* Main.storyboard in Resources */,
+				A9889798216AEF23005D2ED5 /* Assets.xcassets in Resources */,
+				A98897B3216AF00E005D2ED5 /* ItemHeader.xib in Resources */,
+				A98897A7216AF00E005D2ED5 /* DineinTableViewCell.xib in Resources */,
+				A98897BA216AF00E005D2ED5 /* OrderItemTableViewCell.xib in Resources */,
+				A98897B5216AF00E005D2ED5 /* RestaurantMenuHeader.xib in Resources */,
+				A98897AD216AF00E005D2ED5 /* MenuSectionHeaderViewCell.xib in Resources */,
+				A98897A5216AF00E005D2ED5 /* RestaurantTableCell.xib in Resources */,
+				A98897AF216AF00E005D2ED5 /* ItemOptionCell.xib in Resources */,
+				A98897E5216AF0E8005D2ED5 /* RestaurantDineInController.xib in Resources */,
+				A9889799216AEF23005D2ED5 /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A91BA1701DDCF322000E8D85 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A91BA17B1DDCF322000E8D85 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0D969C048DBF65D5CDF7006F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Zeat-diner/Pods-Zeat-diner-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Zeat-diner/Pods-Zeat-diner-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Zeat-diner/Pods-Zeat-diner-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5571CB9690D4D2B562D6F0BD /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Zeat-diner/Pods-Zeat-diner-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Zeat-diner/Pods-Zeat-diner-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Zeat-diner/Pods-Zeat-diner-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8FEA2E1CF6B8129D65127BD0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Zeat-diner-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A91BA1581DDCF321000E8D85 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A98897BF216AF027005D2ED5 /* ZeatTabBarViewController.swift in Sources */,
+				A988979F216AEFE8005D2ED5 /* AWSPhoneValidationViewController.swift in Sources */,
+				A98897B2216AF00E005D2ED5 /* ItemHeader.swift in Sources */,
+				A98897B6216AF00E005D2ED5 /* DinerRow.swift in Sources */,
+				A98897CB216AF03F005D2ED5 /* MenuDuration.swift in Sources */,
+				A98897D1216AF04A005D2ED5 /* OrderItem.swift in Sources */,
+				A98897D4216AF04A005D2ED5 /* OrderItemOptionGroup.swift in Sources */,
+				A98897C1216AF037005D2ED5 /* RestaurantService.swift in Sources */,
+				A98897CF216AF04A005D2ED5 /* Order.swift in Sources */,
+				A98897B8216AF00E005D2ED5 /* OrderItemRow.swift in Sources */,
+				A988979A216AEF64005D2ED5 /* AppDelegate.swift in Sources */,
+				A98897E7216AF0E8005D2ED5 /* RestaurantItemOptionController.swift in Sources */,
+				A98897C0216AF02A005D2ED5 /* ZeatNavigationController.swift in Sources */,
+				A98897E6216AF0E8005D2ED5 /* RestaurantNewTableController.swift in Sources */,
+				A98897B1216AF00E005D2ED5 /* ItemOptionHeader.swift in Sources */,
+				A98897DF216AF056005D2ED5 /* ZeatUnusedCodeForFutureReference.swift in Sources */,
+				A98897B4216AF00E005D2ED5 /* RestaurantMenuHeader.swift in Sources */,
+				A98897E1216AF056005D2ED5 /* ZeatConstants.swift in Sources */,
+				A98897A0216AEFFE005D2ED5 /* AWSLoginViewController.swift in Sources */,
+				A98897D6216AF04F005D2ED5 /* Diner.swift in Sources */,
+				A98897C2216AF037005D2ED5 /* OrderService.swift in Sources */,
+				A98897D0216AF04A005D2ED5 /* OrderDiner.swift in Sources */,
+				A98897BC216AF019005D2ED5 /* CurrentOrderTableViewController.swift in Sources */,
+				A98897A3216AF008005D2ED5 /* ZeatViewControllerAnimatedTransitioning.swift in Sources */,
+				A98897B7216AF00E005D2ED5 /* DinerCell.swift in Sources */,
+				A98897AE216AF00E005D2ED5 /* ItemOptionCell.swift in Sources */,
+				A98897DB216AF056005D2ED5 /* ZeatAlerts.swift in Sources */,
+				A98897C3216AF037005D2ED5 /* DinerService.swift in Sources */,
+				A98897DE216AF056005D2ED5 /* ZeatUtility.swift in Sources */,
+				A98897D5216AF04A005D2ED5 /* OrderItemOptionValue.swift in Sources */,
+				A98897C7216AF03F005D2ED5 /* MenuItem.swift in Sources */,
+				A98897CA216AF03F005D2ED5 /* ShortMenu.swift in Sources */,
+				A98897C9216AF03F005D2ED5 /* MenuItemOptionValue.swift in Sources */,
+				A98897CD216AF045005D2ED5 /* DiningTable.swift in Sources */,
+				A98897E2216AF056005D2ED5 /* JSONStringArrayEncoding.swift in Sources */,
+				A98897A1216AF002005D2ED5 /* ZeatAWSIdentityProviderManager.swift in Sources */,
+				A98897E0216AF056005D2ED5 /* ZeatSharedData.swift in Sources */,
+				A988979D216AEFDB005D2ED5 /* AWSRegistrationMainViewController.swift in Sources */,
+				A98897EB216AF0E8005D2ED5 /* RestauranMenuTableViewController.swift in Sources */,
+				A98897A2216AF005005D2ED5 /* ZeatNavigationDelegate.swift in Sources */,
+				A98897AC216AF00E005D2ED5 /* MenuSectionHeaderViewCell.swift in Sources */,
+				A98897CC216AF045005D2ED5 /* Restaurant.swift in Sources */,
+				A98897C6216AF03F005D2ED5 /* MenuSubsection.swift in Sources */,
+				A98897C8216AF03F005D2ED5 /* MenuItemOptionGroup.swift in Sources */,
+				A98897C5216AF03F005D2ED5 /* MenuSection.swift in Sources */,
+				A98897D3216AF04A005D2ED5 /* CartDetail.swift in Sources */,
+				A98897A6216AF00E005D2ED5 /* DineinTableViewCell.swift in Sources */,
+				A98897DD216AF056005D2ED5 /* ZeatError.swift in Sources */,
+				A98897BD216AF019005D2ED5 /* CurrentOrderViewController.swift in Sources */,
+				A98897D7216AF04F005D2ED5 /* DinerToken.swift in Sources */,
+				A98897AA216AF00E005D2ED5 /* MenuItemWithImageTableViewCell.swift in Sources */,
+				A98897EA216AF0E8005D2ED5 /* CitySearchViewController.swift in Sources */,
+				A98897E9216AF0E8005D2ED5 /* RestaurantListViewController.swift in Sources */,
+				A98897D2216AF04A005D2ED5 /* Cart.swift in Sources */,
+				A98897A8216AF00E005D2ED5 /* MenuItemTableViewCell.swift in Sources */,
+				A98897DC216AF056005D2ED5 /* ZeatErrorTypes.swift in Sources */,
+				A98897D9216AF056005D2ED5 /* ZeatUserDefaults.swift in Sources */,
+				A98897E3216AF056005D2ED5 /* ZeatExtensions.swift in Sources */,
+				A98897E4216AF0E8005D2ED5 /* RestaurantDineInController.swift in Sources */,
+				A98897B9216AF00E005D2ED5 /* OrderItemTableViewCell.swift in Sources */,
+				A98897D8216AF056005D2ED5 /* ZeatServiceConstants.swift in Sources */,
+				A98897DA216AF056005D2ED5 /* JSON.swift in Sources */,
+				A98897BE216AF01D005D2ED5 /* ProfileViewController.swift in Sources */,
+				A98897E8216AF0E8005D2ED5 /* RestaurantItemController.swift in Sources */,
+				A988979E216AEFE4005D2ED5 /* AWSRegistrationViewController.swift in Sources */,
+				A98897C4216AF03F005D2ED5 /* Menu.swift in Sources */,
+				A98897CE216AF045005D2ED5 /* GeoPoint.swift in Sources */,
+				A98897A4216AF00E005D2ED5 /* RestaurantTableCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A91BA16E1DDCF322000E8D85 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A91BA1791DDCF322000E8D85 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A91BA1741DDCF322000E8D85 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A91BA15B1DDCF321000E8D85 /* Zeat-diner */;
+			targetProxy = A91BA1731DDCF322000E8D85 /* PBXContainerItemProxy */;
+		};
+		A91BA17F1DDCF322000E8D85 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A91BA15B1DDCF321000E8D85 /* Zeat-diner */;
+			targetProxy = A91BA17E1DDCF322000E8D85 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A91BA1651DDCF321000E8D85 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A91BA1661DDCF321000E8D85 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A91BA16A1DDCF321000E8D85 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A91BA16B1DDCF321000E8D85 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A91BA1841DDCF322000E8D85 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
+				CLANG_CXX_LIBRARY = "compiler-default";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = NO;
+				FRAMEWORK_SEARCH_PATHS = "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/**";
+				"FRAMEWORK_SEARCH_PATHS[arch=*]" = "";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A91BA1851DDCF322000E8D85 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
+				CLANG_CXX_LIBRARY = "compiler-default";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				"FRAMEWORK_SEARCH_PATHS[arch=*]" = "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/**";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A91BA1871DDCF322000E8D85 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A0DB449608B8C01280D2DB02 /* Pods-Zeat-diner.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = "Zeat-diner/Zeat-diner.entitlements";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J7U4DHVFXC;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/Alamofire\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/NVActivityIndicatorView\"",
+				);
+				INFOPLIST_FILE = "Zeat-diner/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.zeat.zeat-diner";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		A91BA1881DDCF322000E8D85 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4298BA194B170C2EA03618DC /* Pods-Zeat-diner.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = "Zeat-diner/Zeat-diner.entitlements";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J7U4DHVFXC;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/Alamofire\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/GoogleToolboxForMac\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/NVActivityIndicatorView\"",
+					"\"${PODS_ROOT}/FirebaseAnalytics/Frameworks/frameworks\"",
+					"\"${PODS_ROOT}/FirebaseCore/Frameworks/frameworks\"",
+					"\"${PODS_ROOT}/FirebaseInstanceID/Frameworks/frameworks\"",
+					"\"${PODS_ROOT}/FirebaseMessaging/Frameworks/frameworks\"",
+					"\"${PODS_ROOT}/GoogleInterchangeUtilities/Frameworks/frameworks\"",
+					"\"${PODS_ROOT}/GoogleSymbolUtilities/Frameworks/frameworks\"",
+				);
+				"FRAMEWORK_SEARCH_PATHS[arch=*]" = (
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/Alamofire\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/NVActivityIndicatorView\"",
+					"\"${PODS_ROOT}/FirebaseAnalytics/Frameworks/frameworks\"",
+					"\"${PODS_ROOT}/GoogleInterchangeUtilities/Frameworks/frameworks\"",
+					"\"${PODS_ROOT}/GoogleSymbolUtilities/Frameworks/frameworks\"",
+				);
+				INFOPLIST_FILE = "Zeat-diner/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.zeat.zeat-diner";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		A91BA18A1DDCF322000E8D85 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = J7U4DHVFXC;
+				INFOPLIST_FILE = "Zeat-dinerTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Zeat.Zeat-dinerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Zeat-diner.app/Zeat-diner";
+			};
+			name = Debug;
+		};
+		A91BA18B1DDCF322000E8D85 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = J7U4DHVFXC;
+				INFOPLIST_FILE = "Zeat-dinerTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Zeat.Zeat-dinerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Zeat-diner.app/Zeat-diner";
+			};
+			name = Release;
+		};
+		A91BA18D1DDCF322000E8D85 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = J7U4DHVFXC;
+				INFOPLIST_FILE = "Zeat-dinerUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Zeat.Zeat-dinerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "Zeat-diner";
+			};
+			name = Debug;
+		};
+		A91BA18E1DDCF322000E8D85 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = J7U4DHVFXC;
+				INFOPLIST_FILE = "Zeat-dinerUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Zeat.Zeat-dinerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "Zeat-diner";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A91BA1571DDCF321000E8D85 /* Build configuration list for PBXProject "Zeat-diner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A91BA1841DDCF322000E8D85 /* Debug */,
+				A91BA1851DDCF322000E8D85 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A91BA1861DDCF322000E8D85 /* Build configuration list for PBXNativeTarget "Zeat-diner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A91BA1871DDCF322000E8D85 /* Debug */,
+				A91BA1881DDCF322000E8D85 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A91BA1891DDCF322000E8D85 /* Build configuration list for PBXNativeTarget "Zeat-dinerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A91BA18A1DDCF322000E8D85 /* Debug */,
+				A91BA18B1DDCF322000E8D85 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A91BA18C1DDCF322000E8D85 /* Build configuration list for PBXNativeTarget "Zeat-dinerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A91BA18D1DDCF322000E8D85 /* Debug */,
+				A91BA18E1DDCF322000E8D85 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A91BA1541DDCF321000E8D85 /* Project object */;
+}
