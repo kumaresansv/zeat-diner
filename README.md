@@ -5,6 +5,11 @@ This App is built for both Diners/Restaurant owners. The app allows user to sear
 
 ![](ZeatSearchAndDineIn.gif)
 
+
+![](ZeatOrderAddItems.gif)
+
+
+
 ## Features
 
 - [x] Diner Features
