@@ -1,4 +1,4 @@
-# Product Name
+# Zeat - An easy way to eat
 > Restaurant Table/Order management system for Dine-in/Online/Group ordering
 
 This App is built for both Diners/Restaurant owners. The app allows user to search for restaurants nearby and allow them to order food online or choose the Dine-in option.
